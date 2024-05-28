@@ -1,0 +1,547 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5b1201;
+  --secondary-color: #ecad22;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+/* ========================== common - dung chung ========================*/
+.header a {
+  text-decoration: none;
+}
+
+.list li a {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid var(--secondary-color);
+  width: 230px;
+  text-align: center;
+}
+/*============================= navbar ========================================== */
+.header {
+  width: 100%;
+  /* height: 736px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+  margin: 0px 50px;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 4px 8px;
+}
+
+.user .fa-user {
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.contact .fa-phone {
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.container-header {
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.user #sign-in {
+  border-right: 1px solid #fff;
+}
+.contact a:hover {
+  color: var(--secondary-color);
+}
+.user a:hover {
+  color: var(--secondary-color);
+}
+/* =====================logo, finding, list - after header=============================== */
+.container-after-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.container-after-header .logo img {
+  width: 405px;
+  height: 153px;
+}
+
+/* ======================== Input - finding ==========================*/
+.container-after-header .finding input {
+  width: 500px;
+  height: 35px;
+  border-radius: 15px;
+}
+
+.container-after-header .finding {
+  position: relative;
+  margin-left: 90px;
+}
+
+.container-after-header .fa-magnifying-glass {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  font-size: 20px;
+}
+/*  =================================== List ============================*/
+.container-after-header .list {
+  margin-left: 100px;
+}
+
+.container-after-header .list a {
+  color: #fff;
+}
+
+.sub-list {
+  position: relative;
+}
+
+.list-item {
+  position: absolute;
+  display: none;
+}
+
+.list-item li:hover {
+  background-color: var(--secondary-color);
+}
+
+.sub-list > li:hover .list-item {
+  display: block;
+}
+
+.sub-list {
+  position: relative;
+}
+
+.sub-list .fa-gem {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+/* ==================================Giỏ hàng==================================== */
+.container-after-header .cart {
+  margin-left: 20px;
+  border: 1px solid var(--secondary-color);
+  width: 150px;
+  padding: 8px 16px;
+}
+
+.cart {
+  position: relative;
+  text-align: center;
+}
+
+.cart .fa-cart-shopping {
+  position: absolute;
+  right: 5px;
+  top: 9px;
+  color: var(--secondary-color);
+}
+.cart a {
+  display: inline-block;
+  color: #fff;
+}
+/* Hover cho 2 phần tử list và cart */
+.cart a:hover {
+  color: var(--secondary-color);
+}
+
+.list .sub-list > li > a:hover {
+  color: var(--secondary-color);
+}
+
+/* ===================================== MENU ============================================*/
+.menu {
+  margin-top: 20px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.sub-menu li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 8px 16px;
+}
+
+.sub-menu > li > a:hover {
+  color: var(--secondary-color);
+  /* font-weight: bold; */
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+/* ============================= Hình ảnh Header--------------------------- */
+.banner {
+  border-bottom: 2px solid var(--secondary-color);
+  padding: 8px 16px;
+}
+.banner .banner-img {
+  position: relative;
+  padding: 0 20px;
+}
+
+.banner .banner-img img {
+  width: 100%;
+  height: 455px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.banner .banner-img .btn-action {
+  opacity: 0.95;
+}
+
+.banner .banner-img .btn-action a {
+  position: absolute;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  display: inline-block;
+  padding: 8px 16px;
+  color: #fff;
+  padding: 16px 24px;
+  left: 45%;
+  bottom: 10%;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.banner .banner-img .btn-action a:hover {
+  color: var(--primary-color);
+}
+
+/* ===========================product image internal ============================================ */
+.product-internal {
+  /* margin-top: 20px; */
+  padding: 40px 80px;
+}
+
+.product-internal .title {
+  font-size: 32px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-align: center;
+  word-spacing: 10px;
+}
+
+.product-internal .list-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-internal .list-product .list-item-product img {
+  opacity: 0.8;
+}
+
+.product-internal .list-product .list-item-product {
+  position: relative;
+}
+
+.product-internal .list-product .list-item-product .text {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 6px 1px 6px rgba(255, 255, 255, 0.66);
+}
+
+.product-internal .list-product .list-item-product:hover {
+  box-shadow: -11px 15px 25px -3px rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: -11px 15px 25px -3px var(--secondary-color);
+  -moz-box-shadow: -11px 15px 25px -3px rgb(255, 255, 255);
+  transition: 0.45s;
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+}
+
+.product-internal .list-product .list-item-product img {
+  width: 342px;
+  height: 212px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.product-internal .list-product .list-item-product {
+  border: 2px solid #fff;
+  border-radius: 12px;
+}
+
+/* ============================content======================================================== */
+.container-content {
+  background-color: #f3f2ee;
+  min-height: 545px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container-content .content-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-content .content-flex .content-item:nth-child(1) {
+  width: 10%;
+}
+
+.container-content .content-flex .content-item:nth-child(1) .background {
+  position: relative;
+  background-color: #40adff;
+  width: 600px;
+  height: 300px;
+  margin-left: -530px;
+}
+
+.container-content .content-flex .content-item:nth-child(1) .title-bgc {
+  position: absolute;
+  width: 200px;
+  font-size: 35px;
+  right: -100px;
+  line-height: 2.5;
+  font-weight: bold;
+  color: #dbdbdb;
+  font-family: "Nutinosan", sans-serif;
+  padding: 10px 0;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.container-content .content-flex .content-item img {
+  width: 463px;
+}
+
+.container-content .content-flex .content-item:nth-child(3) {
+  width: 389px;
+  line-height: 2.2;
+}
+
+.container-content .content-flex .content-item:nth-child(3) .title-img {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.container-content .content-flex .content-item:nth-child(3) .title-main {
+  font-size: 35px;
+  font-weight: bold;
+  word-spacing: 10px;
+
+  color: #ad51c5;
+}
+
+.container-content .content-flex .content-item:nth-child(3) .desc {
+  line-height: 2;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.container-content .content-flex .content-item:nth-child(3) button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container-content .content-flex .content-item:nth-child(3) button:hover {
+  background-color: var(--secondary-color);
+}
+/* ================================ commit ============================================= */
+.commit {
+  margin: 40px 40px 0px;
+  padding: 20px 40px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 12px;
+  box-shadow: -11px 15px 25px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -11px 15px 25px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -11px 15px 25px -3px rgba(0, 0, 0, 0.75);
+}
+
+.commit .title {
+  font-size: 32px;
+  padding: 20px 0;
+  color: var(--secondary-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+.commit .desc {
+  margin-top: 10px;
+  font-size: 24px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.commit .desc p {
+  padding: 0 8%;
+}
+
+.commit .list-commit {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  color: #fff;
+}
+
+.commit i {
+  font-size: 32px;
+}
+
+/* ============================Container-content-ngu-hanh============================================= */
+.Container-content-ngu-hanh {
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.Container-content-ngu-hanh .ngu-hanh-flex {
+  padding: 60px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container-content-ngu-hanh .ngu-hanh-flex .ngu-hanh-item:nth-child(1) img {
+  width: 974px;
+  height: 565px;
+}
+
+.Container-content-ngu-hanh .ngu-hanh-flex .ngu-hanh-item:nth-child(2) {
+  padding-left: 25px;
+  line-height: 2;
+  text-align: justify;
+  max-width: 550px;
+}
+
+.Container-content-ngu-hanh
+  .ngu-hanh-flex
+  .ngu-hanh-item:nth-child(2)
+  .title-img {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Container-content-ngu-hanh .ngu-hanh-flex .ngu-hanh-item:nth-child(2) .desc {
+  font-size: 18px;
+}
+
+/* =============================FOOTER - CHÂN TRANG=============================================== */
+.footer {
+  margin-top: 60px;
+  padding: 40px 40px 0;
+  border-bottom: 2px solid var(--secondary-color);
+  border-top: 2px solid var(--secondary-color);
+}
+
+.footer .title {
+  font-size: 32px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.footer .container-footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .container-footer i {
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+.footer .container-footer .input-gmail input {
+  display: inline-block;
+  width: 400px;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 12px;
+}
+
+.footer .container-footer .btn-sign-up a {
+  display: inline-block;
+  min-width: 145px;
+  text-align: center;
+  padding: 12px 32px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  color: #fff;
+  margin-right: 40px;
+  border-radius: 12px;
+}
+
+/* infor store */
+.info-store {
+  margin-top: 30px;
+}
+
+.info-store .title-info {
+  font-size: 24px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.info-store .info-store-title {
+  margin-top: 10px;
+  line-height: 1.4;
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+.info-store .info-store-title a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.info-store .highlight p {
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* ====================================Floating button ==================================*/
+.float-button .float-button-item-facebook i {
+  position: fixed;
+  right: 20px;
+  bottom: 20%;
+  font-size: 40px;
+  color: #ecad22;
+}
+
+.float-button .float-button-item-phone i {
+  position: fixed;
+  right: 20px;
+  bottom: 10%;
+  font-size: 40px;
+  color: #ecad22;
+}
